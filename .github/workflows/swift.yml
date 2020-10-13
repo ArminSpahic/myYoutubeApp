@@ -12,7 +12,7 @@ jobs:
              - name: Checkout
                uses: actions/checkout@v1 
              - name: Rebase in-home
-               run: scripts/rebase-in-home
+               run: scripts/git-rebase
              - name: Push rebased in-home
                uses: ad-m/github-push-action@master
                with:
