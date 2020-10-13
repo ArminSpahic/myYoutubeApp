@@ -1,0 +1,15 @@
+IN_HOME_BRANCH="master"
+DEVELOP_BRANCH="develop"
+REMOTE="origin"
+
+git checkout "$IN_HOME_BRANCH"
+CURRENT_BRANCH=$(git rev-parse --abbrev-ref HEAD)
+
+echo "Current branch is: $CURRENT_BRANCH"
+
+if [ "$CURRENT_BRANCH" != "$IN_HOME_BRANCH" ]; then
+	echo "Current branch is \"$CURRENT_BRANCH\" and not \"$IN_HOME_BRANCH\"!"
+	exit 1
+fi
+
+git rebase "$REMOTE/$DEVELOP_BRANCH"
