@@ -3,7 +3,7 @@ name: Auto push to develop-in-home on develop update
 on:
      push:
          branches:
-             - develop
+             - development1
 
 jobs:
      rebase-in-home:
