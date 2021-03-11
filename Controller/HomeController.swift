@@ -16,6 +16,7 @@ class HomeController: UICollectionViewController, UICollectionViewDelegateFlowLa
     
     let trendingCellId = "trendingCellId"
     let subscriptionsCellId = "subscriptionsCellId"
+    
 
     lazy var settingsLauncher: SettingsLauncher = {
         let launcher = SettingsLauncher()
