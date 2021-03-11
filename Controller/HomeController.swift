@@ -13,6 +13,7 @@ class HomeController: UICollectionViewController, UICollectionViewDelegateFlowLa
     let titles: [String] = ["Home", "Trending", "Subscriptions", "Account"]
     let cellId = "cellId"
     let homeId = "homeId"
+    
     let trendingCellId = "trendingCellId"
     let subscriptionsCellId = "subscriptionsCellId"
 
